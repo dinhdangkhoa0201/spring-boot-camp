@@ -18,4 +18,8 @@ public class ProductService {
         entity.setPrice(product.getPrice());
         this.productRepository.save(entity);
     }
+
+    public ProductEntity findById(Integer id) {
+        return this.productRepository.findById(id).get();
+    }
 }
