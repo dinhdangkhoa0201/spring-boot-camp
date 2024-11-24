@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class CatalogyController {
     @Autowired
     private CatalogyService catalogyService;
-    @Autowired
-    private ProductService productService;
 
     @PostMapping("/catalogy")
     public ResponseEntity<Object> saveCatalogy(@RequestBody CatalogyEntity catalogy) {
