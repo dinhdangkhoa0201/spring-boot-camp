@@ -18,7 +18,7 @@ public class CatalogyController {
         catalogyService.saveCatalogy(catalogy);
         return ResponseEntity.ok("Catalogy Saved");
     }
-    @PostMapping(path = "/catalogy/{id}")
+    @GetMapping(path = "/catalogy/{id}")
     public ResponseEntity<Object> findByIdCatalogy( @PathVariable("id") Integer id) {
         catalogyService.findByIdCatalogy(id);
         return ResponseEntity.ok(id);
