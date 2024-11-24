@@ -11,5 +11,6 @@ public class CatalogyService {
     private CatalogyRepository catalogyRepository;
     public void saveCatalogy(CatalogyEntity catalogyEntity) {
         catalogyRepository.save(catalogyEntity);
-    }
+    };
+    public void findByIdCatalogy(Integer id) {catalogyRepository.findById(id).orElse(null);};
 }
