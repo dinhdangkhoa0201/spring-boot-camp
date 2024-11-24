@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-
 import com.example.demo.entity.ProductEntity;
 import com.example.demo.proxy.Product;
 import com.example.demo.service.ProductService;
@@ -17,12 +16,12 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @PostMapping(path = "/product")
-    public ResponseEntity<Object> save(@RequestBody Product product) {
-        this.productService.save(product);
-
-        return ResponseEntity.ok("Save product sucessfully!");
+    @PostMapping("/product")
+    public ResponseEntity<Object> saveProduct(@RequestBody ProductEntity product) {
+        productService.saveProduct(product);
+        return ResponseEntity.ok("luu thanh cong");
     }
+}
 
     @PostMapping(path = "/product/{id}")
     public ResponseEntity<Object> save(@PathVariable("id") Integer id) {
