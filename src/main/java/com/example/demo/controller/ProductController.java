@@ -21,7 +21,6 @@ public class ProductController {
         productService.saveProduct(product);
         return ResponseEntity.ok("luu thanh cong");
     }
-}
 
     @PostMapping(path = "/product/{id}")
     public ResponseEntity<Object> save(@PathVariable("id") Integer id) {
