@@ -3,8 +3,10 @@ package com.example.demo.controller;
 import com.example.demo.entity.ProductEntity;
 import com.example.demo.proxy.Product;
 import com.example.demo.service.ProductService;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -27,5 +29,10 @@ public class ProductController {
         ProductEntity product = this.productService.findById(id);
 
         return ResponseEntity.ok(product);
+    }
+
+    @GetMapping("/product/find-all")
+    public List<ProductEntity> findAll() {
+        return productService.findAll();
     }
 }
