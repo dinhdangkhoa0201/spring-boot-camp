@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,13 +10,14 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @Entity
-@Table(name = "order_detail")
+@Table(name = "cart_details")
 @AllArgsConstructor
 @NoArgsConstructor
 public class CartDetailEntity implements Serializable {
@@ -26,7 +28,8 @@ public class CartDetailEntity implements Serializable {
     private Integer id;
 
     @ManyToOne
-    @JoinColumn(name = "order_id")
+    @JoinColumn(name = "cart_id")
+    @JsonIgnore
     private CartEntity cart;
 
     @ManyToOne
@@ -37,8 +40,8 @@ public class CartDetailEntity implements Serializable {
     private Integer quantity;
 
     @Column(name = "unit_price")
-    private Double unitPrice;
+    private BigDecimal unitPrice;
 
     @Column(name = "total_amount")
-    private Double totalAmount;
+    private BigDecimal totalAmount;
 }
