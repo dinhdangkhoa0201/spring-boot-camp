@@ -1,0 +1,108 @@
+[33mcommit 3c276c3a565e536f51a336c117bafe7afa330df8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mquan-20241127[m[33m)[m
+Author: Ryan161020 <ngocquan161020@gmail.com>
+Date:   Sun Dec 1 16:58:14 2024 +0700
+
+    add findBy catalogy api
+
+[33mcommit 7ba59f5d41c3ded3a49df7b443b7a18f922a6b9b[m
+Author: Ryan161020 <ngocquan161020@gmail.com>
+Date:   Wed Nov 27 21:23:49 2024 +0700
+
+    add findByPriceGreanterThan api
+
+[33mcommit 229a833953cf35b730af0ca3b6a83bec69ad13f0[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: dinhdangkhoa0201 <dinhdangkhoa0201@github.com>
+Date:   Wed Nov 27 20:11:18 2024 +0700
+
+    Add findAll api
+
+[33mcommit 294fbad0f69650710c706526fa11a3e7e7125d8e[m
+Merge: 302c1c7 4036754
+Author: Dinh Dang Khoa <45093050+dinhdangkhoa0201@users.noreply.github.com>
+Date:   Wed Nov 27 20:09:50 2024 +0700
+
+    Merge pull request #5 from dinhdangkhoa0201/quan20241124
+    
+    add findById catalogy api
+
+[33mcommit 302c1c7222d111aa751ae8bd0b539e6062cb9a45[m
+Author: dinhdangkhoa0201 <dinhdangkhoa0201@github.com>
+Date:   Wed Nov 27 19:47:27 2024 +0700
+
+    Example JPA query
+
+[33mcommit 4036754984d52c1e90d366c6e7a92ec9af72353d[m[33m ([m[1;31morigin/quan20241124[m[33m, [m[1;32mquan20241124[m[33m)[m
+Author: Ryan161020 <ngocquan161020@gmail.com>
+Date:   Sun Nov 24 12:18:47 2024 +0700
+
+    edit findById catalogy api
+
+[33mcommit 96dc9d5c1ec22b44afa741024655a2ba7d99fde9[m
+Author: Ryan161020 <ngocquan161020@gmail.com>
+Date:   Sun Nov 24 12:05:43 2024 +0700
+
+    add findById catalogy api
+
+[33mcommit 891b650a3ae95e0db4c8bff9579873b3d7a63528[m
+Merge: 2e89787 d01651f
+Author: Dinh Dang Khoa <45093050+dinhdangkhoa0201@users.noreply.github.com>
+Date:   Sun Nov 24 10:59:25 2024 +0700
+
+    Merge pull request #3 from dinhdangkhoa0201/master
+    
+    Fix syntax
+
+[33mcommit d01651f1a268a3ceb39f9eb0863cab5e26a83a5e[m
+Author: dinhdangkhoa0201 <dinhdangkhoa0201@github.com>
+Date:   Sun Nov 24 10:58:57 2024 +0700
+
+    Fix syntax
+
+[33mcommit 2e89787b614c1467ff2fca8614dac6023817b52e[m
+Merge: bde33fb 33bae5d
+Author: Dinh Dang Khoa <45093050+dinhdangkhoa0201@users.noreply.github.com>
+Date:   Sun Nov 24 10:57:52 2024 +0700
+
+    Merge pull request #2 from dinhdangkhoa0201/master
+    
+    Master
+
+[33mcommit 33bae5db3d3fdfb07e62c79fa25ecc00d76d0768[m
+Merge: 289492e bde33fb
+Author: dinhdangkhoa0201 <dinhdangkhoa0201@github.com>
+Date:   Sun Nov 24 10:55:47 2024 +0700
+
+    Merge remote-tracking branch 'origin/main'
+
+[33mcommit 289492e75a1d086ffcf676c2abbf71d6ad23849e[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Ryan161020 <ngocquan161020@gmail.com>
+Date:   Sun Nov 24 10:42:19 2024 +0700
+
+    quan init
+
+[33mcommit bde33fb32409e2efa07034034eb018b94982ec74[m
+Merge: 9ecd9c9 2247490
+Author: Dinh Dang Khoa <45093050+dinhdangkhoa0201@users.noreply.github.com>
+Date:   Sun Nov 24 10:29:09 2024 +0700
+
+    Merge pull request #1 from dinhdangkhoa0201/ngay-20241124
+    
+    Add func findById in ProductService
+
+[33mcommit 22474904a8a242af57b5a9556c5b5537da07d8dd[m[33m ([m[1;31morigin/ngay-20241124[m[33m)[m
+Author: dinhdangkhoa0201 <dinhdangkhoa0201@github.com>
+Date:   Sun Nov 24 10:28:17 2024 +0700
+
+    Add findById product api
+
+[33mcommit 3f93b77b11fa35fd986dafe78fa8c986d1a5a46c[m
+Author: dinhdangkhoa0201 <dinhdangkhoa0201@github.com>
+Date:   Sun Nov 24 10:24:09 2024 +0700
+
+    Add func findById in ProductService
+
+[33mcommit 9ecd9c9faa2fc6ceb23b9933b94181420db0e335[m
+Author: dinhdangkhoa0201 <dinhdangkhoa0201@github.com>
+Date:   Sun Nov 24 10:19:30 2024 +0700
+
+    Khoi tao project
