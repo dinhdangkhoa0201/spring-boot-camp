@@ -17,7 +17,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 @Data
 @Entity
-@Table(name = "orders")
+@Table(name = "carts")
 @AllArgsConstructor
 @NoArgsConstructor
 public class CartEntity implements Serializable {
