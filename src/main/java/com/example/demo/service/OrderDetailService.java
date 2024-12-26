@@ -11,11 +11,11 @@ import java.util.List;
 public class OrderDetailService {
     @Autowired
     private OrderDetailRepository orderDetailRepository;
-    public OrderDetailEntity saveOrderDetail(OrderDetailEntity id) {
-        return orderDetailRepository.save(id);
+
+    public OrderDetailEntity saveOrderDetail(OrderDetailEntity orderDetailEntity) {
+        return orderDetailRepository.save(orderDetailEntity);
     }
 
-    public List<OrderDetailEntity> findByOrderId(Integer id) {
-        return orderDetailRepository.findByOrderId(id);
-    }
+    public List<OrderDetailEntity> findByOrderDetailId(Integer Id) {
+        return orderDetailRepository.findByOrderId(Id);  }
 }
