@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Entity
-@Table(name = "order_detail")
+@Table(name = "cart_detail")
 @AllArgsConstructor
 @NoArgsConstructor
 public class CartDetailEntity implements Serializable {
@@ -26,7 +26,7 @@ public class CartDetailEntity implements Serializable {
     private Integer id;
 
     @ManyToOne
-    @JoinColumn(name = "order_id")
+    @JoinColumn(name = "cart_id")
     private CartEntity cart;
 
     @ManyToOne
