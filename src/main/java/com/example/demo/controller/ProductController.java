@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
+import com.example.demo.dto.product.CreateProductRequest;
 import com.example.demo.entity.ProductEntity;
-import com.example.demo.proxy.Product;
 import com.example.demo.service.ProductService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,13 +19,12 @@ public class ProductController {
     private ProductService productService;
 
     @PostMapping("/product")
-    public ResponseEntity<Object> saveProduct(@RequestBody ProductEntity product) {
-        productService.saveProduct(product);
-        return ResponseEntity.ok("luu thanh cong");
+    public ResponseEntity<Object> saveProduct(@RequestBody CreateProductRequest product) {
+        return ResponseEntity.ok(productService.saveProduct(product)) ;
     }
 
-    @PostMapping(path = "/product/{id}")
-    public ResponseEntity<Object> save(@PathVariable("id") Integer id) {
+    @GetMapping(path = "/product/{id}")
+    public ResponseEntity<Object> findById(@PathVariable("id") Integer id) {
         ProductEntity product = this.productService.findById(id);
 
         return ResponseEntity.ok(product);
